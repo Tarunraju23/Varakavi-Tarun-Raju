@@ -1,0 +1,145 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ffa500, #ffffff, #ffc0cb, #87cefa, #d8bfd8);
+  color: #212529;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  margin-top: 40px;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #343a40;
+}
+
+.heading-box {
+  background: #2cd0df;
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #61d5e2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ba55d3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  background: #f0f0ef;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  align-items: center;
+  border: 1px solid #ffeeba;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.filters,
+.buttons-extra {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+/* Blog Styles */
+.blog-card {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.blog-card h3 {
+  margin-top: 0;
+  color: #495057;
+}
+
+.blog-card p {
+  color: #495057;
+  margin-bottom: 10px;
+}
+
+.blog-card button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  background-color: #17a2b8;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.blog-card button:last-child {
+  background-color: #dc3545;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .heading-box {
+    font-size: 1.5em;
+    padding: 12px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .filters,
+  .buttons-extra {
+    flex-direction: column;
+  }
+}
